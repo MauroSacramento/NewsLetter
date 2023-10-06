@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+  }
+
+body{
+    width: 100vw;
+    height: 100vh;   
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+#container {
+    position: relative;
+}
+
+main{
+    background-color: var(--body-bg-color);
+    width: 630px;
+    height: 780px;
+    color: var(--text-color);
+    position: absolute;
+}
+
+figure img{
+    width: 389px;
+    height: 94px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+#texto {
+    margin-left: 36px;
+    margin-top: 92px;
+}
+#texto p:first-child{
+    color: var(--title-color);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Work Sans';
+}
+#texto p:nth-child(2) {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'League Spartan';
+    line-height: normal;
+    margin-top: 4px;
+}
+#texto p:nth-child(3) {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'League Spartan';
+    line-height: 15px;
+    margin-top: 4px;
+}
+
+form{
+    margin-top: 17px;
+    margin-left: 36px;
+    width: 100vw;
+    display: flex;
+}
+
+
+#formulario p{
+    margin-top: 50px;
+    margin-left: 36px;
+    color: var(--form-color);
+}
+
+form #mail{
+    width: 640px;
+    height: 48px;
+}
+form label{
+    margin-bottom: 17px;
+}
+
+#btn_enviar{
+    background: var(--bg-button-color) url(./assets/send.svg) no-repeat center;
+    border: 0;
+    width: 48px;
+    height: 48px;
+}
+#btn_enviar:hover{
+    background-color: #442a81;
+}
+
+a {
+    display: flex;
+    margin-top: 52px;
+    margin-left: 36px;
+    color: var(--bg-button-color);
+    font-size: 14px;
+    font-family: 'League Spartan';
+    align-items: center;
+    gap: 2px;
+    text-decoration: none;
+}
+a img {
+    width: 24px;
+    height: 24px;
+}
+
+#bg_img{
+    background: url(./assets/read_news.jpg) lightgray 50%/cover no-repeat ;
+    width: 850px;
+    height: 780px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
